@@ -1,0 +1,40 @@
+
+
+
+<app-display></app-display>
+
+<div class="above" style="display: flex; justify-content: center; width: 100%; margin-top: -4em; ">
+ <div class="matcardup" style="display: flex; width: 100em; flex-wrap: wrap;margin-left: 5em;">  
+<mat-card  class="matcard" style="display: inline-block;background-color:lightcyan;"  *ngFor="let oreo of oreoinfo"   >
+     <img  class="imagedisplay" src={{oreo.value}} style="display: flex;
+     justify-content: center;
+     width: 100%;">
+      <div class="namedisplay" align="center">
+         <!-- <button  style="border: none;" (click)="onclick(oreo.name,oreo.value,oreo.price)">{{oreo.name}}</button> -->
+         <a style="border: none;" (click)="onclick(oreo.name,oreo.value,oreo.price)">{{oreo.name}}</a>
+         <br><br>
+        <span>{{oreo.price}}</span>
+           
+
+     </div> 
+   
+
+</mat-card> 
+ 
+</div>
+  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
